@@ -23,12 +23,29 @@ var ImageAffiche=0   //image suivante à afficher
 const Banner = document.querySelector('#banner');
 const BannerImage = document.querySelector('.banner-img');
 const TexteImage = document.querySelector('#banner p');
-const ArrowLeft = document.querySelector('.arrow_left');
-const ArrowRight = document.querySelector('.arrow_right');
 const PucesImage = document.querySelector('#banner .dots');
 const ConstSlideDelai = 3000; // 3 secondes
 // ****************************************************************************
-// créer les puces selon le nombre d'images ***********************************
+// CREATION FLECHE GAUCHE avec appenChild
+	let ArrowLeft = document.createElement("button")
+	let NewImageLeft = document.createElement("img")
+	ArrowLeft.className="arrow arrow_left"
+	ArrowLeft.ariaLabel="Flèche gauche"
+	NewImageLeft.src ="assets/images/arrow_left.png"
+	NewImageLeft.alt= "image flèche gauche"
+	ArrowLeft.appendChild(NewImageLeft)
+	Banner.appendChild(ArrowLeft)
+// CREATION FLECHE DROITE  avec appenChild
+	let ArrowRight = document.createElement("button")
+	let NewImageRight = document.createElement("img")
+	ArrowRight.className="arrow arrow_right"
+	ArrowRight.ariaLabel="Flèche droite"
+	NewImageRight.src ="assets/images/arrow_right.png"
+	NewImageRight.alt= "image flèche droite"
+	ArrowRight.appendChild(NewImageRight)
+	Banner.appendChild(ArrowRight)
+// ****************************************************************************
+// créer les puces selon le nombre d'images avec innerHTML ********************
 PucesImage.innerHTML =`<div class="dot dot_selected"></div>`; // 1ère puce = sélectionnée
 for (let i = 1; i<NbreImages; i++){ // puces suivantes
 	PucesImage.innerHTML +=`<div class="dot"></div>`;  // puces suivanntes non sélectionnées
