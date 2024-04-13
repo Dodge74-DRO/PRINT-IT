@@ -30,7 +30,6 @@ const ConstSlideDelai = 3000; // 3 secondes
 	let ArrowLeft = document.createElement("button")
 	let NewImageLeft = document.createElement("img")
 	ArrowLeft.className="arrow arrow_left"
-	ArrowLeft.ariaLabel="Flèche gauche"
 	NewImageLeft.src ="assets/images/arrow_left.png"
 	NewImageLeft.alt= "image flèche gauche"
 	ArrowLeft.appendChild(NewImageLeft)
@@ -39,7 +38,6 @@ const ConstSlideDelai = 3000; // 3 secondes
 	let ArrowRight = document.createElement("button")
 	let NewImageRight = document.createElement("img")
 	ArrowRight.className="arrow arrow_right"
-	ArrowRight.ariaLabel="Flèche droite"
 	NewImageRight.src ="assets/images/arrow_right.png"
 	NewImageRight.alt= "image flèche droite"
 	ArrowRight.appendChild(NewImageRight)
