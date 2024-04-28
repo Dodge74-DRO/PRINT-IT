@@ -27,7 +27,7 @@ const PucesImage = document.querySelector('#banner .dots');
 const ConstSlideDelai = 3000; // 3 secondes
 // ****************************************************************************
 // CREATION FLECHE GAUCHE avec appenChild
-	let ArrowLeft = document.createElement("button")
+	let ArrowLeft = document.createElement("div")
 	let NewImageLeft = document.createElement("img")
 	ArrowLeft.className="arrow arrow_left"
 	NewImageLeft.src ="assets/images/arrow_left.png"
@@ -35,7 +35,7 @@ const ConstSlideDelai = 3000; // 3 secondes
 	ArrowLeft.appendChild(NewImageLeft)
 	Banner.appendChild(ArrowLeft)
 // CREATION FLECHE DROITE  avec appenChild
-	let ArrowRight = document.createElement("button")
+	let ArrowRight = document.createElement("div")
 	let NewImageRight = document.createElement("img")
 	ArrowRight.className="arrow arrow_right"
 	NewImageRight.src ="assets/images/arrow_right.png"
